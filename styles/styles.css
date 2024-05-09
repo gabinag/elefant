@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #FFDD2B;
+  --secundary-color: #303030;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -7,24 +12,12 @@
 header {
   display: flex;
   justify-content: center;
-  background-color: #FFDD2B;
+  background-color: var(--primary-color);
 }
 header img {
   width: 250px;
   margin: 2rem 1rem;
   padding: 1rem;
-}
-@media (min-width: 768px) {
-  header img {
-    width: 400px;
-    margin: 5rem;
-  }
-}
-@media (min-width: 1024px) {
-  header img {
-    width: 600px;
-    margin: 8rem;
-  }
 }
 
 .video {
@@ -38,53 +31,37 @@ header img {
 }
 
 .carrossel {
-  background-color: #303030;
+  background-color: var(--secundary-color);
   padding: 1.5rem;
 }
 .carrossel p {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  color: #FFDD2B;
+  color: var(--primary-color);
 }
-@media (min-width: 768px) {
-  .carrossel p {
-    font-size: 50px;
-  }
-}
-.carrossel .swiper {
+.swiper {
   max-width: 1200px;
 }
-.carrossel .swiper-wrapper {
-  display: flex;
-  align-items: center;
-}
-.carrossel .swiper-wrapper .swiper-slide {
+.swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  align-self: center;
 }
-.carrossel .swiper-wrapper .swiper-slide img {
+.swiper-slide img {
   width: 100px;
 }
-@media (min-width: 768px) {
-  .carrossel .swiper-wrapper .swiper-slide {
-    margin: 6rem 0;
-  }
-  .carrossel .swiper-wrapper .swiper-slide img {
-    width: 180px;
-  }
-}
-.carrossel .swiper-pagination-bullet {
-  background-color: #FFDD2B;
+.swiper-pagination-bullet {
+  background-color: var(--primary-color);
   opacity: 1;
   width: 10px;
   height: 10px;
 }
-.carrossel .swiper-pagination-bullet-active {
-  background-color: #303030;
-  border: 1px solid #FFDD2B;
+.swiper-pagination-bullet-active {
+  background-color: var(--secundary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .sobre {
@@ -92,9 +69,6 @@ header img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 4rem 1.5rem;
   position: relative;
 }
@@ -103,17 +77,13 @@ header img {
   max-width: 1200px;
   font-size: 20px;
   text-align: center;
+  margin: auto;
   color: #fff;
 }
-@media (min-width: 1024px) {
-  .sobre {
-    padding: 10rem;
-  }
-}
-
 .sobre::before {
   content: "";
   position: absolute;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -121,19 +91,17 @@ header img {
 }
 
 footer {
-  background-color: #FFDD2B;
-  padding-bottom: 4rem;
+  background-color: var(--primary-color);
+  padding: 0.5rem 0rem 4rem;
   position: relative;
   overflow-x: hidden;
 }
-footer .footer-text {
+.footer-text {
   position: absolute;
   left: -1rem;
-  padding-top: 0.5rem;
-  font-size: 14px;
   white-space: nowrap;
 }
-footer .wrap-content {
+.wrap-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,25 +110,51 @@ footer .wrap-content {
   font-size: 18px;
   text-align: center;
 }
-footer .wrap-content img {
+.wrap-content img {
   margin: 2rem 0;
   max-width: 80px;
 }
-footer .wrap-content a {
+.wrap-content a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
 }
-footer .wrap-logos {
+.wrap-logos {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-footer .wrap-logos img {
+.wrap-logos img {
   max-width: 50px;
 }
+
 @media (min-width: 768px) {
-  footer .wrap-logos {
+  header img {
+    width: 400px;
+    margin: 5rem;
+  }
+  .carrossel p {
+    font-size: 50px;
+  }
+  .swiper-wrapper .swiper-slide {
+    margin: 6rem 0;
+  }
+  .swiper-slide img {
+    width: 180px;
+  }
+  .wrap-logos {
     gap: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  header img {
+    width: 600px;
+    margin: 8rem;
+  }
+  .carrossel p {
+    font-size: 50px;
+  }
+  .sobre {
+    padding: 10rem;
   }
 }
