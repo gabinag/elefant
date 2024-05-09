@@ -28,7 +28,7 @@ header img {
 }
 
 .video {
-  padding-bottom: 56.2%;
+  padding-bottom: 56.25%;
   position: relative;
 }
 .video iframe {
@@ -39,11 +39,11 @@ header img {
 
 .carrossel {
   background-color: #303030;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .carrossel p {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   color: #FFDD2B;
 }
@@ -62,7 +62,8 @@ header img {
 .carrossel .swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
-  margin: 3rem 0;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .carrossel .swiper-wrapper .swiper-slide img {
   width: 100px;
@@ -129,7 +130,7 @@ footer .footer-text {
   position: absolute;
   left: -1rem;
   padding-top: 0.5rem;
-  font-size: 18px;
+  font-size: 14px;
   white-space: nowrap;
 }
 footer .wrap-content {
@@ -138,7 +139,7 @@ footer .wrap-content {
   align-items: center;
   gap: 0.5rem;
   margin: 4rem 1rem;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 footer .wrap-content img {
@@ -162,4 +163,4 @@ footer .wrap-logos img {
   footer .wrap-logos {
     gap: 4rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
