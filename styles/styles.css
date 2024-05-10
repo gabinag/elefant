@@ -98,8 +98,9 @@ footer {
 }
 .footer-text {
   position: absolute;
-  left: -1rem;
   white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrap-content {
   display: flex;
