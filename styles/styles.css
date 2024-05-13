@@ -21,14 +21,29 @@ header img {
 }
 
 .video {
+  position: relative;
+  background-color: #000;
+  padding-bottom: 56.25%;
+}
+
+.video iframe {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: min(1280px, 100%);
+  height: min(720px, 100%);
+}
+
+/* .video {
   padding-bottom: 56.25%;
   position: relative;
 }
-.video iframe {
+.video video {
   position: absolute;
   width: 100%;
   height: 100%;
-}
+} */
 
 .carrossel {
   background-color: var(--secundary-color);
@@ -165,5 +180,11 @@ footer {
   }
   .footer-text {
     font-size: 16px
+  }
+}
+@media (min-width: 1280px) {
+  .video {
+    height: 720px;
+    padding: 0px;
   }
 }
