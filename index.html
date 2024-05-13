@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/background-img.webp" type="image/webp">
 </head>
 <body>
     <header>
@@ -27,10 +28,10 @@
         <p>clientes</p>
         <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/asics-logo.webp" alt="Logotipo da Asics" loading="lazy" class="img-size"></div>
-              <div class="swiper-slide"><img src="./assets/loft-logo.webp" alt="Logotipo da Loft" loading="lazy" class="other-size"></div>
-              <div class="swiper-slide"><img src="./assets/titebond-logo.webp" alt="Logotipo da Titebond" loading="lazy" class="img-size"></div>
-              <div class="swiper-slide"><img src="./assets/livelo-logo.webp" alt="Logotipo da Livelo" loading="lazy" class="img-size"></div>
+              <div class="swiper-slide"><img src="./assets/asics-logo.webp" alt="Logotipo da Asics" class="img-size"></div>
+              <div class="swiper-slide"><img src="./assets/loft-logo.webp" alt="Logotipo da Loft" class="other-size"></div>
+              <div class="swiper-slide"><img src="./assets/titebond-logo.webp" alt="Logotipo da Titebond" class="img-size"></div>
+              <div class="swiper-slide"><img src="./assets/livelo-logo.webp" alt="Logotipo da Livelo" class="img-size"></div>
               <div class="swiper-slide"><img src="./assets/elg-logo.webp" alt="Logotipo da elg" class="img-size"></div>
               <div class="swiper-slide"><img src="./assets/condor-logo.webp" alt="Logotipo da Condor" class="img-size"></div>
               <div class="swiper-slide"><img src="./assets/cenprot-logo.webp" alt="Logotipo do CENPROT" class="img-size"></div>
@@ -73,6 +74,33 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer async src="./script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper', {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: 'true'
+            },
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+            },
+            breakpoints: {
+                550: { 
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4
+                }
+            }
+        });
+    });
+    </script>
 </body>
 </html>
