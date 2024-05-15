@@ -20,21 +20,6 @@ header img {
   padding: 1rem;
 }
 
-/* .video {
-  position: relative;
-  background-color: #000;
-  padding-bottom: 56.25%;
-}
-
-.video iframe {
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: min(1280px, 100%);
-  height: min(720px, 100%);
-} */
-
 .video {
   padding-bottom: 56.25%;
   position: relative;
@@ -176,12 +161,6 @@ footer {
     padding: 10rem;
   }
   .footer-text {
-    font-size: 16px
+    font-size: 16px;
   }
 }
-/* @media (min-width: 1280px) {
-  .video {
-    height: 720px;
-    padding: 0px;
-  }
-} */
