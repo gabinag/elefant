@@ -16,6 +16,7 @@ header {
 }
 header img {
   width: 250px;
+  height: 80px;
   margin: 2rem 1rem;
   padding: 1rem;
 }
@@ -41,7 +42,7 @@ header img {
   color: var(--primary-color);
 }
 .swiper {
-  max-width: 1200px;
+  max-width: 400px;
 }
 .swiper-slide {
   display: flex;
@@ -51,10 +52,13 @@ header img {
   align-self: center;
 }
 .img-size {
-  width: 100px;
+  width: 65px;
 }
 .other-size {
-  width: 70px;
+  width: 40px;
+}
+.img-size, .other-size {
+  margin: 0 .5rem;
 }
 .swiper-pagination-bullet {
   background-color: var(--primary-color);
@@ -137,10 +141,14 @@ footer {
 @media (min-width: 768px) {
   header img {
     width: 400px;
+    height: 115px;
     margin: 5rem;
   }
   .carrossel p {
     font-size: 50px;
+  }
+  .swiper {
+    max-width: 1200px;
   }
   .swiper-wrapper .swiper-slide {
     margin: 6rem 0;
@@ -155,6 +163,7 @@ footer {
 @media (min-width: 1024px) {
   header img {
     width: 600px;
+    height: 160px;
     margin: 8rem;
   }
   .sobre {
