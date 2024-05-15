@@ -42,7 +42,7 @@ header img {
   color: var(--primary-color);
 }
 .swiper {
-  max-width: 400px;
+  max-width: 350px;
 }
 .swiper-slide {
   display: flex;
@@ -52,10 +52,10 @@ header img {
   align-self: center;
 }
 .img-size {
-  width: 65px;
+  width: 3.5rem;
 }
 .other-size {
-  width: 40px;
+  width: 2rem;
 }
 .img-size, .other-size {
   margin: 0 .5rem;
@@ -170,6 +170,6 @@ footer {
     padding: 10rem;
   }
   .footer-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
