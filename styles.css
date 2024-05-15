@@ -65,8 +65,11 @@ header img {
   margin-bottom: 3rem;
   align-self: center;
 }
-.img-size, .other-size {
+.img-size {
   width: 100px;
+}
+.other-size {
+  width: 70px;
 }
 .swiper-pagination-bullet {
   background-color: var(--primary-color);
