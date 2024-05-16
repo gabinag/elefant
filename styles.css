@@ -42,7 +42,7 @@ header img {
   color: var(--primary-color);
 }
 .swiper {
-  max-width: 350px;
+  max-width: 550px;
 }
 .swiper-slide {
   display: flex;
@@ -52,10 +52,10 @@ header img {
   align-self: center;
 }
 .img-size {
-  width: 3.5rem;
+  width: 100px;
 }
 .other-size {
-  width: 2rem;
+  width: 70px;
 }
 .img-size, .other-size {
   margin: 0 .5rem;
