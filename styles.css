@@ -52,10 +52,10 @@ header img {
   align-self: center;
 }
 .img-size {
-  width: 100px;
+  width: 120px;
 }
 .other-size {
-  width: 70px;
+  width: 80px;
 }
 .img-size, .other-size {
   margin: 0 .5rem;
