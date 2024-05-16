@@ -72,7 +72,7 @@ header img {
 }
 
 .sobre {
-  background-image: url("../assets/background-img.webp");
+  background-image: url("../assets/background-img.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
