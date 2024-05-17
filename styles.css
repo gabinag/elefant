@@ -47,8 +47,7 @@ header img {
 .swiper-slide {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin: 2rem 0 3rem;
   align-self: center;
 }
 .img-size {
@@ -100,13 +99,10 @@ header img {
 footer {
   background-color: var(--primary-color);
   padding: .5rem 0rem 4rem;
-  position: relative;
   overflow-x: hidden;
 }
 .footer-text {
-  position: absolute;
   white-space: nowrap;
-  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 12px;
   padding-top: .5rem;
@@ -144,7 +140,7 @@ footer {
     height: 115px;
     margin: 5rem;
   }
-  .carrossel p {
+  .carrossel p{
     font-size: 50px;
   }
   .swiper {
@@ -165,6 +161,9 @@ footer {
     width: 600px;
     height: 160px;
     margin: 8rem;
+  }
+  .carrossel {
+    padding: 3rem 0;
   }
   .sobre {
     padding: 10rem;
