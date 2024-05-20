@@ -176,9 +176,9 @@ footer {
 @media (min-width: 1024px) {
   header {
     height: 100dvh;
-  },
+  }
   header img {
-    width: 80rem;
+    width: 60rem;
   }
   .carrossel {
     padding: 4rem 0;
