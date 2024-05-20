@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: var(--primary-color);
-  height: 100dvh;
+  height: 15rem;
 }
 header img {
   width: 250px;
@@ -50,7 +50,7 @@ header img {
 .swiper-slide {
   display: flex;
   justify-content: center;
-  margin: 2rem 0 3rem;
+  margin: 3rem 0 4rem;
   align-self: center;
 }
 .img-size {
@@ -60,7 +60,7 @@ header img {
   width: 8rem;
 }
 .img-size, .other-size {
-  margin: 0 .5rem;
+  margin: 0 1rem;
 }
 .swiper-pagination-bullet {
   background-color: var(--primary-color);
@@ -78,7 +78,7 @@ header img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 4rem 1.5rem;
+  padding: 4rem 2rem;
   position: relative;
   text-wrap: pretty;
 }
@@ -94,7 +94,7 @@ header img {
 .content {
   position: relative;
   max-width: 1200px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin: auto;
   color: #fff;
@@ -145,6 +145,9 @@ footer {
 }
 
 @media (min-width: 768px) {
+  header {
+    height: 30rem;
+  }
   header img {
     width: 40rem;
   }
@@ -166,14 +169,14 @@ footer {
   .sobre {
     padding: 8rem 4rem;
   }
-  .sobre p {
-    font-size: 2rem;
-  }
   .wrap-logos {
     gap: 4rem;
   }
 }
 @media (min-width: 1024px) {
+  header {
+    height: 100dvh;
+  },
   header img {
     width: 60rem;
   }
