@@ -9,16 +9,19 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 header {
   display: flex;
   justify-content: center;
   background-color: var(--primary-color);
+  height: 100dvh;
 }
 header img {
   width: 250px;
-  height: 80px;
-  margin: 2rem 1rem;
-  padding: 1rem;
+  align-self: center;
 }
 
 .video {
@@ -37,7 +40,7 @@ header img {
 }
 .carrossel p {
   text-align: center;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--primary-color);
 }
@@ -51,10 +54,10 @@ header img {
   align-self: center;
 }
 .img-size {
-  width: 120px;
+  width: 12rem;
 }
 .other-size {
-  width: 80px;
+  width: 8rem;
 }
 .img-size, .other-size {
   margin: 0 .5rem;
@@ -62,8 +65,8 @@ header img {
 .swiper-pagination-bullet {
   background-color: var(--primary-color);
   opacity: 1;
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
 }
 .swiper-pagination-bullet-active {
   background-color: var(--secundary-color);
@@ -77,14 +80,7 @@ header img {
   background-attachment: fixed;
   padding: 4rem 1.5rem;
   position: relative;
-}
-.sobre .content {
-  position: relative;
-  max-width: 1200px;
-  font-size: 20px;
-  text-align: center;
-  margin: auto;
-  color: #fff;
+  text-wrap: pretty;
 }
 .sobre::before {
   content: "";
@@ -95,17 +91,31 @@ header img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.content {
+  position: relative;
+  max-width: 1200px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  color: #fff;
+}
+.content p:first-of-type {
+  margin-bottom: 1.5rem;
+}
 
 footer {
   background-color: var(--primary-color);
-  padding: .5rem 0rem 4rem;
+  padding: .5rem 0rem 6rem;
   overflow-x: hidden;
+  position: relative;
 }
 .footer-text {
   white-space: nowrap;
   transform: translate(-50%, -50%);
   font-size: 12px;
-  padding-top: .5rem;
+  padding-top: .8rem;
+  position: absolute;
+  left: 50%;
 }
 .wrap-content {
   display: flex;
@@ -113,12 +123,12 @@ footer {
   align-items: center;
   gap: .5rem;
   margin: 4rem 1rem;
-  font-size: 18px;
+  font-size: 1.5rem;
   text-align: center;
 }
 .wrap-content img {
   margin: 2rem 0;
-  max-width: 80px;
+  max-width: 8rem;
 }
 .wrap-content a {
   text-decoration: none;
@@ -131,44 +141,52 @@ footer {
   gap: 2rem;
 }
 .wrap-logos img {
-  max-width: 50px;
+  max-width: 5rem;
 }
 
 @media (min-width: 768px) {
   header img {
-    width: 400px;
-    height: 115px;
-    margin: 5rem;
+    width: 40rem;
   }
   .carrossel p{
-    font-size: 50px;
+    font-size: 5rem;
   }
   .swiper {
-    max-width: 1200px;
+    max-width: 120rem;
   }
   .swiper-wrapper .swiper-slide {
     margin: 6rem 0;
   }
   .img-size {
-    width: 180px;
+    width: 18rem;
   }
   .other-size {
-    width: 120px;
+    width: 12rem;
+  }
+  .sobre {
+    padding: 8rem 4rem;
+  }
+  .sobre p {
+    font-size: 2rem;
+  }
+  .wrap-logos {
+    gap: 4rem;
   }
 }
 @media (min-width: 1024px) {
   header img {
-    width: 600px;
-    height: 160px;
-    margin: 8rem;
+    width: 60rem;
   }
   .carrossel {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
   .sobre {
-    padding: 10rem;
+    padding: 12rem 4rem;
   }
   .footer-text {
     font-size: 14px;
+  }
+  .wrap-logos img:hover{
+    transform: translateY(-1rem);
   }
 }
