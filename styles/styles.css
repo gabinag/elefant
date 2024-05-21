@@ -20,9 +20,10 @@ header {
   justify-content: center;
   background-color: var(--primary-color);
   height: 15rem;
+  padding: 0 1.5rem;
 }
 header img {
-  width: 250px;
+  width: min(250px, 100%);
   align-self: center;
 }
 ul, #arrow {
@@ -79,7 +80,7 @@ ul, #arrow {
 }
 
 .sobre {
-  background-image: url("../assets/background-img.png");
+  background-image: url("../assets/images/background-img.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
