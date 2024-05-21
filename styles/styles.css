@@ -96,7 +96,7 @@ ul, #arrow {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.content {
+#content {
   position: relative;
   max-width: 1200px;
   font-size: 2rem;
@@ -104,7 +104,7 @@ ul, #arrow {
   margin: auto;
   color: #fff;
 }
-.content p:first-of-type {
+#content p:first-of-type {
   margin-bottom: 1.5rem;
 }
 
@@ -205,14 +205,10 @@ footer {
   #arrow {
     display: flex;
     align-self: center;
-    transition: transform 0.3s ease;
   }
   #arrow img {
     width: 4rem;
     margin-bottom: 1.5rem;
-  }
-  #arrow:hover {
-    transform: translateY(.5rem);
   }
   .carrossel {
     padding: 4rem 0;
