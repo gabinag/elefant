@@ -11,17 +11,35 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: var(--primary-color);
   height: 15rem;
 }
 header img {
   width: 250px;
   align-self: center;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0 1rem;
+  gap: 3rem;
+}
+ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#arrow {
+  display: none;
 }
 
 .video {
@@ -115,12 +133,13 @@ footer {
   font-size: 12px;
   position: absolute;
   left: 50%;
+  color: #CAAF24;
 }
 .wrap-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
+  gap: .8rem;
   margin: 5rem 1rem;
   font-size: 1.5rem;
   text-align: center;
@@ -150,6 +169,9 @@ footer {
   header img {
     width: 40rem;
   }
+  ul a {
+    font-size: 2rem;
+  }
   .carrossel p{
     font-size: 5rem;
   }
@@ -178,18 +200,38 @@ footer {
 @media (min-width: 1024px) {
   header {
     height: 100dvh;
+    justify-content: space-between;
   }
   header img {
     width: 60rem;
+  }
+  ul {
+    padding: 4rem 4rem 0 0;
+    justify-content: flex-end;
+  }
+  #arrow {
+    display: flex;
+    align-self: center;
+    transition: transform 0.3s ease;
+  }
+  #arrow img {
+    width: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  #arrow:hover {
+    transform: translateY(.5rem);
   }
   .carrossel {
     padding: 4rem 0;
   }
   .sobre {
-    padding: 12rem 4rem;
+    padding: 15rem 4rem;
   }
   .footer-text {
     font-size: 14px;
+  }
+  .wrap-logos img {
+    transition: transform 0.3s ease;
   }
   .wrap-logos img:hover{
     transform: translateY(-1rem);
